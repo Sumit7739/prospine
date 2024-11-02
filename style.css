@@ -117,7 +117,7 @@ ul {
 li {
   position: relative;
   margin-top: 6px;
-  display: inline-block;
+  list-style-type: none;
 }
 
 .hover-link {

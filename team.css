@@ -1,0 +1,271 @@
+.doctor-profile {
+    display: flex;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;/
+}
+
+.text-container h2 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.text-container h3 {
+    font-size: 2em;
+    margin: 5px 0;
+}
+
+.text-container p {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+.text-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-container a:hover {
+    text-decoration: underline;
+}
+
+.team-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.team-member {
+    flex: 1 1 calc(30% - 20px);
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.team-member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+}
+
+.core-values {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.core-values h2 {
+    font-size: 3.5em;
+    color: #333;
+}
+
+.core-values p {
+    font-size: 2.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.values-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.value-box {
+    width: 45%;
+    padding: 20px;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+}
+
+.value-box h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.value-box p {
+    font-size: 1.6em;
+    color: #666;
+    line-height: 1.8;
+}
+
+.box2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #424253;
+    padding: 30px;
+    border-radius: 0px;
+}
+
+.stats-container {
+    max-width: 100%;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    min-width: 500px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.stat-box h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0;
+}
+
+.stat-box p {
+    font-size: 1.5em;
+    color: #ddd;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .core-values {
+        margin: 15px;
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .values-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .value-box {
+        width: 95%;
+        height: auto;
+    }
+
+    .core-values h2 {
+        font-size: 2em;
+    }
+
+    .core-values p {
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+
+    .value-box {
+        margin: 0;
+        padding: 5px;
+        /* border: 1px solid; */
+    }
+
+    .value-box h3 {
+        font-size: 1.4em;
+    }
+
+    .value-box p {
+        font-size: 1em;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+
+    .stats-container {
+        width: 95%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stat-box {
+        width: 90%;
+        margin: 0 auto;
+        min-width: auto;
+    }
+
+    .stat-box h2 {
+        font-size: 1.5em;
+    }
+
+    .stat-box p {
+        font-size: 1em;
+    }
+
+    .doctor-profile {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .text-container {
+        margin: 5px;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .text-container h2 {
+        font-size: 1.8em;
+    }
+
+    .text-container h3 {
+        font-size: 1.5em;
+    }
+
+    .text-container p {
+        margin-top: 20px;
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .team-gallery {
+        display: flex;
+        flex-direction: column;
+    }
+}

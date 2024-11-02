@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="treatment.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="team.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -26,12 +27,12 @@
                 <div class="nav-links" id="navLinks">
                     <a href="prospineapproach.html">Why Pro Spine</a>
                     <a href="treatment.html">Conditions We Treat</a>
-                    <a href="team.html">Our Team</a>
+                    <a href="team.html" class="link active">Our Team</a>
                     <a href="testimonials.html">Testimonials</a>
                     <a href="events.html">Events</a>
                     <a href="career.html">Career</a>
                     <a href="aboutus.html">About Us</a>
-                    <a href="contact.html" class="link active">Contact Us</a>
+                    <a href="contact.html">Contact Us</a>
                 </div>
             </div>
         </nav>
@@ -44,13 +45,14 @@
 
     <div class="box1">
         <div class="inner-box">
-            <h1>Reach Out to Start Your Journey to Better Health</h1>
-            <p>We’re here to help! Give us a call, or share your number, and we’ll get in touch with you.</p>
+            <h1>Meet Our Dedicated Team</h1>
+            <p>Our skilled professionals are ready to support you on your path to recovery and wellness. Reach out to
+                learn more about our specialized services.</p>
             <br>
             <button class="btn" id="openModal" role="button">Book an Appointment</button>
-
+            <br>
+            <!-- <button class="btn" id="teamContactButton" role="button">Contact Our Team</button> -->
             <br />
-
             <hr class="hr2 hr">
         </div>
     </div>
@@ -143,71 +145,107 @@
         </div>
         </form>
     </div>
+    <div class="core-values">
+        <h2>Our Core Values</h2>
+        <p>These guiding values are the foundation of our practice.</p>
 
-    <div class="box3">
-        <h2>How can we assist you?</h2>
-        <p>Accessing ProSpine services is just a click away!</p>
-        <div class="container">
-            <div class="box">
-                <h3>Online Consultation</h3>
-                <p>Get expert advice from the comfort of your home. Our online consultation allows you to connect with
-                    qualified
-                    professionals through video calls, ensuring you receive personalized care without needing to travel.
-                </p>
-                <button class="btn" onclick="openModal('modalOnline')">Book Now</button>
+        <div class="values-container">
+            <div class="value-box">
+                <h3>Empowering Transformation</h3>
+                <p>Many seek physiotherapy for pain relief or to regain function, whether it’s from a sports injury, a
+                    car accident, or a persistent ache. We’re here to support your journey toward recovery and
+                    resilience.</p>
             </div>
-            <div class="box">
-                <h3>Appointment Booking</h3>
 
-                <p>Schedule your visit with our specialists easily. Our appointment booking system is user-friendly,
-                    enabling you
-                    to choose the date that suits you best, ensuring minimal waiting times and a smooth experience.</p>
-
-                <button class="btn" onclick="openModal('modalAppointment')">Book Appointment</button>
+            <div class="value-box">
+                <h3>Commitment to Growth</h3>
+                <p>We’re dedicated to expanding our knowledge by collaborating with health and rehabilitation experts.
+                    This commitment to continuous learning ensures we deliver care of the highest quality.</p>
             </div>
-            <div class="box">
-                <h3>Consultation at Home</h3>
-                <p>Request a visit from our healthcare professionals. Our consultation-at-home service is designed for
-                    your
-                    convenience, providing you with high-quality care in the comfort of your own home, tailored to your
-                    specific
-                    needs.</p>
-                <button class="btn" onclick="openModal('modalHome')">Request Visit</button>
+
+            <div class="value-box">
+                <h3>Compassion-Driven Care</h3>
+                <p>Our approach is rooted in empathy, understanding, and a genuine dedication to each person’s
+                    well-being. We provide personalized care that respects each individual’s unique needs.</p>
+            </div>
+
+            <div class="value-box">
+                <h3>Science-Based Practice</h3>
+                <p>Our therapists bring advanced training and extensive experience to their work. Through
+                    research-backed methods and compassionate care, we aim to offer the most effective treatments for
+                    lasting results.</p>
             </div>
         </div>
-
+        <br>
+        <hr class="hr">
     </div>
 
-    <div class="box5">
-        <div class="choose">
-            <h2>Reach Out to Start Your Journey to Better Health</h2>
-            <div class="description">
-                <p>Have any doubts? Feel free to contact us</p>
+    <div class="box2">
+        <div class="inner-box2">
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h2>2016</h2>
+                    <p>Year Founded</p>
+                </div>
+                <div class="stat-box">
+                    <h2><span id="customerCount">0</span>+</h2>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-box">
+                    <h2>20+</h2>
+                    <p>Doctors Associated</p>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="doctor-profile">
+
+        <div class="image-container">
+            <img src="image/file.png" alt="Dr. Pranav Kumar" />
+        </div>
+
+        <div class="text-container">
+            <h2>Meet Our Specialist</h2>
+            <h3>Dr. Pranav Kumar</h3>
+            <p>Dr. Pranav Kumar is a highly experienced physiotherapist dedicated to improving patient health and
+                wellness through personalized treatment plans. With years of expertise in rehabilitation science, Dr.
+                Kumar specializes in various therapies, ensuring every patient receives compassionate and effective
+                care.</p>
+            <p>Contact: <a href="mailto:pranav.kumar@example.com">pranav.kumar@example.com</a></p>
             <br>
-            <div class="icons">
-                <a href="mailto:info@prospine.com" class="icon" title="Email Us"><i class="fas fa-envelope"></i> |
-                    testmail@mail.com</a>
-                <a href="tel:+919939121212" class="icon" title="Call Us"><i class="fas fa-phone-alt"></i> |
-                    +91-9939-121212</a>
-                <a href="https://maps.app.goo.gl/zfFGr3ShXtHJfHh57" target="_blank" class="icon"
-                    title="Find Us on the Map"><i class="fas fa-map-marker-alt"></i> | SVN Road, Aadampur, Bhagalpur</a>
-            </div>
-        </div>
-        <div class="choose choose2">
-            <h2>Would you like us to call you?</h2>
-            <div class="description">
-                <p>Need assistance? Request a call back from our support team!</p>
-            </div>
-            <div class="form">
-                <form>
-                    <input type="text" placeholder="Name" name="name" id="name">
-                    <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
-                    <button type="submit">Request a Call</button>
-                </form>
-            </div>
+            <button class="btn" onclick="location.href='portfolio.html'">View Profile</button>
         </div>
     </div>
+
+    <div class="team-section box4">
+        <h2>Meet the Pro Spine Team</h2>
+        <p>Our team comprises highly skilled and experienced professionals dedicated to providing exceptional care.
+            We collaborate to create personalized treatment plans tailored to your specific needs.</p>
+    </div>
+
+    <div class="team-gallery">
+        <div class="team-member">
+            <img src="image/3.jpg" alt="Team Member 1" />
+            <h4>Dr. Jane Doe (For Testing)</h4>
+            <p>Lead Physiotherapist Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, magnam? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Molestias, excepturi?</p>
+        </div>
+
+        <div class="team-member">
+            <img src="image/chronic-pain.jpeg" alt="Team Member 2" />
+            <h4>Mr. John Smith</h4>
+            <p>Certified Physical Therapist Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, laudantium!
+            </p>
+        </div>
+
+        <div class="team-member">
+            <img src="image/Long-Term-Solutions.jpeg" alt="Team Member 3" />
+            <h4>Ms. Emily Johnson</h4>
+            <p>Sports Rehabilitation Specialist Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam,
+                ipsum.</p>
+        </div>
+    </div>
+    <br><br>
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-quote">
@@ -274,6 +312,27 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const customerCountEl = document.getElementById("customerCount");
+            const targetCount = 40000;
+            const duration = 2000; // Duration of the animation in milliseconds
+            const increment = Math.ceil(targetCount / (duration / 50)); // Adjust increment based on duration
+
+            let currentCount = 0;
+
+            const countUp = setInterval(() => {
+                currentCount += increment;
+                if (currentCount >= targetCount) {
+                    customerCountEl.textContent = targetCount.toLocaleString();
+                    clearInterval(countUp);
+                } else {
+                    customerCountEl.textContent = currentCount.toLocaleString();
+                }
+            }, 50); // Update every 50ms
+        });
+    </script>
+
 </body>
 
 </html>

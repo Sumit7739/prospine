@@ -1100,7 +1100,8 @@ textarea {
   font-size: 20px;
   margin-top: 15px;
   margin-bottom: 20px;
-  color: #fff;
+  color: #000000;
+  font-weight: 500;
 }
 
 #review strong {
@@ -1112,7 +1113,11 @@ textarea {
   align-items: center;
   text-align: center;
   margin: 20px;
-  color: #fff;
+  color: #000000;
+}
+
+.reviewh3 span{
+  color: #000;
 }
 
 .checkbox-container {

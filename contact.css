@@ -47,13 +47,15 @@
   padding: 10px;
 }
 
-.form input[type="text"] {
+#names, #phones {
+  padding: 15px;
+  border-radius: 20px;
   border: 1px solid #ddd;
 }
 
 @media screen and (max-width: 768px) {
   .btn {
-    max-width: 70%;
+    max-width: 40%;
     padding: 7px;
   }
 
@@ -84,8 +86,4 @@
     padding: 0;
   }
 
-  .form input[type="text"],
-  input[type="tel"] {
-    padding: 5px;
-  }
 }

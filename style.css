@@ -39,6 +39,7 @@ header {
   font-size: 14px;
   color: #0072ce;
 }
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -46,7 +47,8 @@ header {
 }
 
 .hamburger {
-  display: none; /* Hide hamburger by default */
+  display: none;
+  /* Hide hamburger by default */
   font-size: 28px;
   color: rgb(0, 0, 0);
   cursor: pointer;
@@ -54,7 +56,8 @@ header {
 
 .nav-links {
   display: flex;
-  flex-direction: row; /* Horizontal layout */
+  flex-direction: row;
+  /* Horizontal layout */
   gap: 20px;
 }
 
@@ -62,17 +65,13 @@ header {
   color: inherit;
   text-decoration: none;
   padding: 5px;
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgba(100, 200, 200, 1),
-      rgba(100, 200, 200, 1)
-    ),
-    linear-gradient(
-      to right,
+      rgba(100, 200, 200, 1)),
+    linear-gradient(to right,
       rgba(255, 0, 0, 1),
       rgba(255, 0, 180, 1),
-      rgba(0, 100, 200, 1)
-    );
+      rgba(0, 100, 200, 1));
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -87,17 +86,13 @@ a:hover {
   color: inherit;
   text-decoration: none;
   padding: 5px;
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgba(100, 200, 200, 1),
-      rgba(100, 200, 200, 1)
-    ),
-    linear-gradient(
-      to right,
+      rgba(100, 200, 200, 1)),
+    linear-gradient(to right,
       rgba(255, 0, 0, 1),
       rgba(255, 0, 180, 1),
-      rgba(0, 100, 200, 1)
-    );
+      rgba(0, 100, 200, 1));
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -109,7 +104,54 @@ a:hover {
 }
 
 .link.active {
-  background-size: 0 3px, 100% 3px; /* Active link shows all colors */
+  background-size: 0 3px, 100% 3px;
+  /* Active link shows all colors */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  position: relative;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+.hover-link {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+
+.dropdown {
+  margin-top: 5px;
+  display: none;
+  position: absolute;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 99999;
+  padding: 20px;
+  flex-direction: row;
+
+}
+
+li:hover .dropdown {
+  display: flex;
+}
+
+.dropdown ul {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.dropdown li {
+  display: block;
+  margin: 5px 0;
 }
 
 .header-right {
@@ -336,11 +378,10 @@ a:hover {
   margin-bottom: 50px;
   padding: 50px;
   border-radius: 10px;
-  background: linear-gradient(
-    to right,
-    #d4fcff,
-    #cce2ff
-  ); /* Light aqua to soft sky blue */
+  background: linear-gradient(to right,
+      #d4fcff,
+      #cce2ff);
+  /* Light aqua to soft sky blue */
 }
 
 .servh {
@@ -349,7 +390,8 @@ a:hover {
 
 .serv .serv1 {
   display: flex;
-  width: calc(20% - 20px); /* 4 items per row */
+  width: calc(20% - 20px);
+  /* 4 items per row */
   padding: 10px;
   background: rgb(255, 255, 255);
   border-radius: 16px;
@@ -360,10 +402,12 @@ a:hover {
   transition: transform 0.5s ease;
   z-index: inherit;
 }
+
 .serv1:hover {
   font-weight: 700;
   transform: scale(1.07);
 }
+
 .serv1 img {
   width: 50px;
   height: 60px;
@@ -382,6 +426,7 @@ a:hover {
   margin-top: 10px;
   font-size: 1.5em;
 }
+
 .box4 p {
   font-size: 1.2em;
   margin-bottom: 50px;
@@ -541,7 +586,8 @@ body .box5 {
 .title {
   font-size: 2.2em;
   font-weight: bold;
-  color: #0073e6; /* Highlighted color for title */
+  color: #0073e6;
+  /* Highlighted color for title */
   margin-bottom: 10px;
 }
 
@@ -681,12 +727,15 @@ body .box5 {
   border: 2px solid #ccc;
   border-radius: 10px;
 }
+
 .video-container {
   display: none;
   width: 100;
-  padding-top: 56.25%; /* Adjust this for different aspect ratios: 75% for 4:3, 56.25% for 16:9 */
+  padding-top: 56.25%;
+  /* Adjust this for different aspect ratios: 75% for 4:3, 56.25% for 16:9 */
   position: relative;
 }
+
 video {
   position: absolute;
   top: 0;
@@ -694,10 +743,12 @@ video {
   width: 100%;
   height: 100%;
 }
+
 .controlss {
   text-align: center;
   margin-top: 10px;
 }
+
 .btn1 {
   margin: 0 10px;
   cursor: pointer;
@@ -721,20 +772,23 @@ video {
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  gap: 20px; /* Add gap for better spacing */
+  gap: 20px;
+  /* Add gap for better spacing */
 }
 
 .review-item {
   display: flex;
   flex-direction: column;
-  width: 48%; /* Use 48% to fit two items per row with a gap */
+  width: 48%;
+  /* Use 48% to fit two items per row with a gap */
   gap: 10px;
   padding: 15px;
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 15px;
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add subtle shadow */
 }
 
 .review-header {
@@ -751,7 +805,8 @@ video {
 
 .review-rating {
   font-size: 1rem;
-  color: #fbb034; /* Star color */
+  color: #fbb034;
+  /* Star color */
   margin: 0;
 }
 
@@ -801,17 +856,15 @@ video {
 .hr {
   border: none;
   height: 3px;
-  background: linear-gradient(
-    90deg,
-    #d383a3,
-    #b4778f,
-    #ff4b2b,
-    #927aa5,
-    #6f91aa,
-    #d383a3,
-    #79a6c1,
-    #ff416c
-  );
+  background: linear-gradient(90deg,
+      #d383a3,
+      #b4778f,
+      #ff4b2b,
+      #927aa5,
+      #6f91aa,
+      #d383a3,
+      #79a6c1,
+      #ff416c);
   background-size: 400% 100%;
   animation: gradientShift 8s linear infinite;
   margin-bottom: 30px;
@@ -822,9 +875,11 @@ video {
   0% {
     background-position: 0% 0%;
   }
+
   50% {
     background-position: 100% 0%;
   }
+
   100% {
     background-position: 0% 0%;
   }
@@ -833,15 +888,20 @@ video {
 .hr2 {
   border: none;
   height: 3px;
-  background: linear-gradient(
-    90deg,
-    #ff7eb3,
-    /* Vibrant pink */ #ff65a3,
-    /* Deep pink */ #7afcff,
-    /* Bright aqua */ #32ff7e,
-    /* Bright green */ #fcb045,
-    /* Warm orange */ #ff7eb3 /* Match the start color for seamless loop */
-  );
+  background: linear-gradient(90deg,
+      #ff7eb3,
+      /* Vibrant pink */
+      #ff65a3,
+      /* Deep pink */
+      #7afcff,
+      /* Bright aqua */
+      #32ff7e,
+      /* Bright green */
+      #fcb045,
+      /* Warm orange */
+      #ff7eb3
+      /* Match the start color for seamless loop */
+    );
   background-size: 400% 100%;
   animation: gradientShift 8s linear infinite;
   margin-top: 30px;
@@ -851,13 +911,16 @@ video {
   0% {
     background-position: 0% 0%;
   }
+
   50% {
     background-position: 100% 0%;
   }
+
   100% {
     background-position: 0% 0%;
   }
 }
+
 .footer-sections {
   display: flex;
   flex-wrap: wrap;
@@ -979,20 +1042,26 @@ video {
   background-color: rgba(255, 255, 255, 0.848);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
-  animation: zoomIn 0.8s ease forwards; /* Apply animation on open */
-  opacity: 0; /* Start hidden */
+  animation: zoomIn 0.8s ease forwards;
+  /* Apply animation on open */
+  opacity: 0;
+  /* Start hidden */
 }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
-    transform: scale(0.5); /* Start small */
+    transform: scale(0.5);
+    /* Start small */
   }
+
   to {
     opacity: 1;
-    transform: scale(1); /* End at original size */
+    transform: scale(1);
+    /* End at original size */
   }
 }
+
 /* Display the modal and trigger the animation */
 .modal.open .modal-content {
   opacity: 1;
@@ -1116,7 +1185,7 @@ textarea {
   color: #000000;
 }
 
-.reviewh3 span{
+.reviewh3 span {
   color: #000;
 }
 
@@ -1134,11 +1203,16 @@ textarea {
 .checkbox-container input[type="checkbox"] {
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 15px; /* Optional: Set width */
-  height: 15px; /* Optional: Set height */
-  transform: scale(1.5); /* Increase size by 1.5 times */
-  -webkit-transform: scale(1.5); /* For Safari compatibility */
-  transform-origin: 0 0; /* Anchor scaling to the top-left */
+  width: 15px;
+  /* Optional: Set width */
+  height: 15px;
+  /* Optional: Set height */
+  transform: scale(1.5);
+  /* Increase size by 1.5 times */
+  -webkit-transform: scale(1.5);
+  /* For Safari compatibility */
+  transform-origin: 0 0;
+  /* Anchor scaling to the top-left */
 }
 
 .container {
@@ -1190,6 +1264,7 @@ textarea {
   .nav-links {
     display: none;
   }
+
   .hamburger {
     position: absolute;
     right: 30px;
@@ -1197,37 +1272,41 @@ textarea {
   }
 
   .nav-links {
-    display: none; /* Hide links by default */
-    flex-direction: column; /* Stack links vertically */
+    display: none;
+    /* Hide links by default */
+    flex-direction: column;
+    /* Stack links vertically */
     position: absolute;
-    top: 60px; /* Position below the navbar */
+    top: 60px;
+    /* Position below the navbar */
     right: 10px;
-    width: 45%; /* Full width */
+    width: 45%;
+    /* Full width */
     padding: 10px;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.624);
     border-radius: 12px;
     border: 1px solid rgba(224, 224, 224, 0.665);
-    z-index: 1000; /* Ensure it appears on top */
+    z-index: 1000;
+    /* Ensure it appears on top */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
 
   .nav-links.active {
-    display: flex; /* Show links when active */
+    display: flex;
+    /* Show links when active */
   }
 
   .nav-links a {
     padding: 15px;
     font-size: 0.8em;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Divider between links */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* Divider between links */
   }
+
   .header-right .contact-number {
     display: none;
-    /* position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 0.7em; */
   }
 
   .header-right .appointment-btn {
@@ -1319,6 +1398,7 @@ textarea {
   .box4 {
     padding: 15px;
   }
+
   .box4 h2 {
     font-size: 1.5em;
   }
@@ -1351,7 +1431,8 @@ textarea {
   }
 
   .serv .serv1 {
-    width: calc(50% - 20px); /* 2 items per row */
+    width: calc(50% - 20px);
+    /* 2 items per row */
   }
 
   .servlink {
@@ -1367,6 +1448,7 @@ textarea {
     height: 20px;
     margin-right: 0px;
   }
+
   .box5 {
     padding: 20px;
     display: flex;
@@ -1395,6 +1477,7 @@ textarea {
     font-size: 0.8em;
     margin-bottom: 0px;
   }
+
   .work-steps {
     grid-template-columns: 1fr;
   }
@@ -1412,7 +1495,7 @@ textarea {
   }
 
   .btn {
-    padding: 5px 10px;
+    padding: 10px 15px;
     font-size: 0.7em;
   }
 
@@ -1437,6 +1520,7 @@ textarea {
     font-size: 1.3em;
     margin-bottom: 10px;
   }
+
   .review {
     padding: 15px;
   }
@@ -1465,6 +1549,7 @@ textarea {
     align-items: center;
     justify-content: center;
   }
+
   .footer-quote h2 {
     margin-top: 80px;
     font-size: 1.2rem;
@@ -1508,9 +1593,12 @@ textarea {
     position: absolute;
     top: 10%;
     left: 2.5%;
-    margin: 10% auto; /* Reduced margin for mobile */
-    padding: 10px; /* Reduced padding */
-    width: 95%; /* Almost full width */
+    margin: 10% auto;
+    /* Reduced margin for mobile */
+    padding: 10px;
+    /* Reduced padding */
+    width: 95%;
+    /* Almost full width */
   }
 
   .modal-content h2 {
@@ -1528,7 +1616,7 @@ textarea {
   }
 
   label {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   input[type="text"],
@@ -1539,8 +1627,11 @@ textarea {
   input[type="time"],
   select,
   textarea {
-    padding: 2px;
-    font-size: 14px; /* Smaller text inputs */
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    /* Smaller text inputs */
   }
 
   .item1 {
@@ -1577,6 +1668,7 @@ textarea {
   .item1 a {
     font-size: 0.7em;
   }
+
   .heading {
     margin-top: 20px;
     text-align: center;
@@ -1601,5 +1693,13 @@ textarea {
 
   .box p {
     font-size: 0.9em;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  li:hover .dropdown {
+    display: none;
   }
 }

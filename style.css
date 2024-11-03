@@ -1279,8 +1279,8 @@ textarea {
     position: absolute;
     top: 60px;
     /* Position below the navbar */
-    right: 10px;
-    width: 45%;
+    right: 0;
+    width: auto;
     /* Full width */
     padding: 10px;
     backdrop-filter: blur(16px) saturate(180%);
@@ -1311,6 +1311,10 @@ textarea {
 
   .header-right .appointment-btn {
     display: none;
+  }
+
+  .droplink{
+    margin-bottom: 10px;
   }
 
   .box1 {

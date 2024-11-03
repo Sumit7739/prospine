@@ -1,3 +1,8 @@
+.box1 .btn {
+    max-width: 100%;
+    /* padding: 10px 15px; */
+}
+
 .doctor-profile {
     display: flex;
     max-width: 90%;
@@ -259,9 +264,8 @@ p {
         font-size: 1em;
     }
 
-    .btn {
-        padding: 10px;
-        font-size: 14px;
+    .box1 .btn {
+        padding: 10px 15px;
     }
 
     .team-gallery {

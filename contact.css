@@ -10,6 +10,11 @@
   width: auto;
 }
 
+.box1 .btn {
+  max-width: 100%;
+  /* padding: 10px 15px; */
+}
+
 .description {
   font-size: 1.5em;
   margin: 10px;
@@ -47,7 +52,8 @@
   padding: 10px;
 }
 
-#names, #phones {
+#names,
+#phones {
   padding: 15px;
   border-radius: 20px;
   border: 1px solid #ddd;
@@ -55,8 +61,8 @@
 
 @media screen and (max-width: 768px) {
   .btn {
-    max-width: 40%;
-    padding: 7px;
+    max-width: 60%;
+    padding: 8px;
   }
 
   .icon {

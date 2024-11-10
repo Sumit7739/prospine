@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pro Spine</title>
+    <link rel="icon" href="image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .logo-container img {
+            position: absolute;
+            top: 15px;
+        }
+
+        header {
+            height: 110px;
+        }
+
+        .box1 {
+            width: 100%;
+            border-radius: 0px;
+        }
+
+        .testimonials-section {
+            width: 98%;
+            align-items: center;
+            text-align: center;
+        }
+
+        .inner-boxs h1 {
+            font-size: 3.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .inner-boxs p {
+            font-size: 1.6em;
+            color: #666;
+        }
+
+        .testimonials-section .inner-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .testt {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .testimonial-container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-container p {
+            font-size: 1.1em;
+            color: #333;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-author {
+            color: #555;
+            font-weight: bold;
+        }
+
+        .testimonial-container {
+            max-width: 600px;
+            margin: 15px auto;
+        }
+
+        @media (max-width: 768px) {
+            .logo-container img {
+                position: absolute;
+                top: 0;
+            }
+
+            header {
+                height: auto;
+            }
+
+            .inner-boxs h1 {
+                font-size: 1.5em;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            .inner-boxs p {
+                font-size: 1em;
+                color: #666;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="image/logo.png" alt="Pro Physio Logo" class="logo"></a>
+        </div>
+
+        <nav>
+            <div class="nav-container">
+                <div class="hamburger" id="hamburger">
+                    &#9776;
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="prospineapproach.html">Why Pro Spine</a>
+                    <a href="treatment.html">Conditions We Treat</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="testimonials.html" class="link active">Testimonials</a>
+                    <a href="events.html">Events</a>
+                    <a href="career.html">Career</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-right">
+            <a href="tel:+919939121212" class="contact-number">Call us: +91 9939121212</a>
+            <!-- <button class="appointment-btn">Book Now!</button> -->
+        </div>
+    </header>
+
+    <div class="box1">
+        <div class="inner-box">
+            <h1>What Our Patients Say</h1>
+            <p>Hear from our patients about their experiences with Pro Spine. We take pride in providing personalized
+                care that
+                makes a difference.</p>
+            <br />
+            <button class="btn" id="openModal" role="button">Book an Appointment</button>
+
+            <hr class="hr2 hr">
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+
+                <div class="form-step" id="step1">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mobile">Mobile:</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+
+                    <button type="button" id="continue1">Continue</button>
+                </div>
+
+
+                <div class="form-step" id="step2" style="display: none;">
+                    <label for="symptom">Reason for Consultation:</label>
+                    <textarea id="symptom" name="symptom"
+                        placeholder="Tell us about your current health condition. Type none if you don't have any."
+                        required></textarea>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="occupation">Occupation</label>
+                    <input type="text" id="occupation" name="occupation" required>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+
+                    <button type="button" id="back1">Back</button>
+                    <button type="button" id="continue2">Continue</button>
+                </div>
+
+
+                <div class="form-step" id="step3" style="display: none;">
+                    <label for="date">Select Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="consultation-type">Consultation Type:</label>
+                    <select id="consultation" name="consultationtype" required>
+                        <option value="" disabled selected>Select Consultation Type</option>
+                        <option value="online">Online</option>
+                        <option value="appointment">Appointment</option>
+                        <option value="in-person">Home Visit</option>
+                    </select>
+
+                    <button type="button" id="back2">Back</button>
+                    <button type="button" id="continue3">Continue</button>
+                </div>
+
+                <div class="form-step" id="review" style="display: none;">
+                    <h3 class="reviewh3">Review Your Details</h3>
+                    <p><strong>Name:</strong> <span id="reviewName"></span></p>
+                    <p><strong>Email:</strong> <span id="reviewEmail"></span></p>
+                    <p><strong>Mobile:</strong> <span id="reviewMobile"></span></p>
+                    <p><strong>City:</strong> <span id="reviewCity"></span></p>
+                    <p><strong>Gender:</strong> <span id="reviewGender"></span></p>
+                    <p><strong>Occupation:</strong> <span id="reviewOccupation"></span></p>
+                    <p><strong>Age:</strong> <span id="reviewAge"></span></p>
+                    <p><strong>Current Health Condition:</strong> <span id="reviewSymptom"></span></p>
+                    <p><strong>Date:</strong> <span id="reviewDate"></span></p>
+                    <p><strong>Consultation Type:</strong> <span id="reviewConsultation"></span></p>
+
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="checkbox" id="checkbox" required>
+                        <label for="checkbox">I agree to the terms and conditions.</label>
+                    </div>
+                    <hr>
+                    <p>After submitting, our staff will contact you soon to confirm your appointment.</p>
+                    <button type="button" id="back3">Back</button>
+                    <button type="submit">Submit</button>
+                </div>
+        </div>
+        </form>
+    </div>
+
+    <div class="testimonials-section">
+        <div class="inner-boxs">
+            <h1>Our Patients Share Their Stories</h1>
+            <p>Discover the positive experiences our patients have had at Pro Spine. Our commitment to personalized care
+                makes all the difference.</p>
+            <br />
+
+            <div class="testt">
+                <!-- Testimonial Container 1 -->
+                <div class="testimonial-container">
+                    <p class="testimonial-text">"Pro Spine transformed my life! After years of back pain, their
+                        personalized
+                        treatment helped me feel relief. Highly recommended!"</p>
+                    <p class="testimonial-author">- Emily L.</p>
+                </div>
+
+                <!-- Testimonial Container 2 -->
+                <div class="testimonial-container">
+                    <p class="testimonial-text">"The care and attention I received at Pro Spine were exceptional. I was
+                        guided through every step of my recovery journey."</p>
+                    <p class="testimonial-author">- Michael S.</p>
+                </div>
+
+                <!-- Testimonial Container 3 -->
+                <div class="testimonial-container">
+                    <p class="testimonial-text">"Thanks to the advanced treatments at Pro Spine, I’m now able to move
+                        without constant pain. A fantastic experience overall!"</p>
+                    <p class="testimonial-author">- Rachel P.</p>
+                </div>
+
+                <!-- Testimonial Container 4 -->
+                <div class="testimonial-container">
+                    <p class="testimonial-text">"Professional and compassionate staff who really listen. My recovery has
+                        been faster than I ever expected."</p>
+                    <p class="testimonial-author">- David T.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-quote">
+                <h2>"Let challenges shape you, not stop you."</h2>
+                <img src="image/logo.png" alt="Logo" class="logo">
+            </div>
+            <hr class="hr">
+            <div class="footer-sections">
+                <div class="about-section footer-section">
+                    <h3>About us</h3>
+                    <ul>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Awards & Affiliations</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Conditions We Treat</h3>
+                    <ul>
+                        <li><a href="#">Herniated Disc</a></li>
+                        <li><a href="#">Spondylolisthesis</a></li>
+                        <li><a href="#">Degenerative Disc</a></li>
+                        <li><a href="#">Brachial Neuralgia</a></li>
+                        <li><a href="#">Disc Prolapse</a></li>
+                        <li><a href="#">Retrolisthesis</a></li>
+                        <li><a href="#">Scoliosis</a></li>
+                        <li><a href="#">Facet Joint Syndrome</a></li>
+                        <li><a href="#">Thecal Compression</a></li>
+                        <li><a href="treatment.html">See All >></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="prospineapproach.html">Why Pro Spine</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Carrier</a></li>
+                        <li><a href="#">Manipal Physiotherapy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2025, ProSpine. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Terms & conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><img src="image/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="image/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="image/icons8-instagram-48.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

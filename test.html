@@ -1,96 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Pro Spine</title>
+  <title>Testimonial</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+
+    * {
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      box-sizing: border-box;
+      font-family: "Open Sans", sans-serif;
     }
-    .container {
+
+    main {
+      position: relative;
       width: 90%;
-      max-width: 800px;
       margin: 0 auto;
+      min-height: 100vh;
+      padding-block: min(10vh, 3rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* border: 1px solid; */
+    }
+
+    .swiper {
+      min-width: 100%;
+      /* height: 1000px; */
+      /* max-width: 800px; */
+      /* border: 1px solid; */
+      background-color: #333;
+    }
+
+    .swiper-slide {
+      width: 90%;
+      height: 980px;
       padding: 20px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #616060;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 70px;
+      background: linear-gradient(135deg, #1F3B4D, #356C74);
     }
-    h1, h2 {
-      color: #004aad;
-    }
-    h1 {
+
+    .swiper-slide .text {
       text-align: center;
-      margin-bottom: 10px;
     }
-    h2 {
-      margin-top: 20px;
+
+    .swiper-slide .text h2 {
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      margin-bottom: 0.625rem;
+      text-transform: uppercase;
     }
-    .section {
-      margin-bottom: 30px;
+
+    .swiper-slide .text p {
+      color: #dadada;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 0.9rem;
+      padding: 0 1rem;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
-    .cta {
-      text-align: center;
-      margin-top: 20px;
+
+    .swiper-slide .vidsreel {
+      border: 1px solid #fff;
+      /* width: 500px; */
     }
-    .cta button {
-      background-color: #004aad;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 5px;
+
+    .vids video {
+      width: auto;
+      /* max-height: 500px; */
+      border-radius: 10px;
+      object-fit: cover
     }
-    .cta button:hover {
-      background-color: #003078;
+
+    .vidsreel video {
+      width: auto;
+      max-height: 900px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    /* Pagination */
+    .swiper-pagination-bullet,
+    .swiper-pagination-bullet-active {
+      /* position: absolute; */
+      /* bottom: -22px; */
+      width: 12px;
+      height: 12px;
+      background: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .swiper-pagination {
+      bottom: 1.25rem !important;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .swiper-slide {
+        height: 350px;
+        padding: 10px;
+      }
+
+      .swiper-slide .text h2 {
+        font-size: 1.3rem;
+      }
+
+      .swiper-slide .text p {
+        font-size: 0.8rem;
+      }
+
+      .swiper-slide .vidsreel video {
+        max-height: 300px;
+      }
+
+      .swiper-slide .vids video {
+        max-height: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .swiper {
+        max-height: 800px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+      }
+
+      .swiper-slide .vids video {
+        width: auto;
+        max-height: 160px;
+      }
+
+      .swiper-slide .text {
+        border: 1px solid #fff;
+        padding: 10px;
+      }
+
+      .swiper-slide .text h2 {
+        font-size: 1.1rem;
+      }
+
+      .swiper-slide .text p {
+        font-size: 0.7rem;
+      }
+
+      .swiper-slide .vidsreel video {
+        max-height: 520px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>About Pro Spine</h1>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html"><img src="image/logo.png" alt="Pro Physio Logo" class="logo"></a>
+      </div>
 
-    <div class="section" id="introduction">
-      <h2>Introduction to Pro Spine</h2>
-      <p>Pro Spine is a state-of-the-art physiotherapy clinic dedicated to spinal and musculoskeletal health. Our mission is to provide advanced, non-surgical solutions that empower our patients to live pain-free, active lives. With a focus on cutting-edge therapies, Pro Spine helps individuals achieve better spinal health, manage pain effectively, and, when possible, avoid surgical interventions.</p>
-    </div>
+      <nav>
+        <div class="nav-container">
+          <div class="hamburger" id="hamburger">
+            &#9776;
+          </div>
+          <div class="nav-links" id="navLinks">
+            <a href="prospineapproach.html">Why Pro Spine</a>
+            <a href="treatment.html">Conditions We Treat</a>
+            <a href="team.html">Our Team</a>
+            <a href="testimonials.html" class="link active">Testimonials</a>
+            <a href="events.html">Events</a>
+            <a href="career.html">Career</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </nav>
 
-    <div class="section" id="specialized-services">
-      <h2>Specialized Services</h2>
-      <p>At Pro Spine, we offer a range of specialized therapies tailored for optimal spinal and musculoskeletal health, including robotic spinal decompression and advanced pelvic floor rehabilitation. These state-of-the-art treatments target conditions with precision, providing relief, improving mobility, and supporting patients in avoiding invasive surgery whenever possible. With our unique offerings, Pro Spine stands out as a center of excellence in spine care.</p>
-    </div>
+      <div class="header-right">
+        <a href="tel:+919939121212" class="contact-number">Call us: +91 9939121212</a>
+        <!-- <button class="appointment-btn">Book Now!</button> -->
+      </div>
+    </header>
 
-    <div class="section" id="expert-team">
-      <h2>Expert Team</h2>
-      <p>Our clinic is led by Dr. Pranav Kumar, an award-winning physical therapist certified in pelvic floor therapy, with a focus on spinal health and pain management. Dr. Kumar's expertise and dedication to innovative therapies ensure each patient receives exceptional care. Supported by a skilled team, Pro Spine is equipped to provide top-quality, personalized treatments, helping patients achieve sustainable recovery and improved quality of life.</p>
-    </div>
+    <div class="box1">
+      <div class="inner-box">
+        <h1>What Our Patients Say</h1>
+        <p>Hear from our patients about their experiences with Pro Spine. We take pride in providing personalized
+          care that
+          makes a difference.</p>
+        <br />
+        <button class="btn" id="openModal" role="button">Book an Appointment</button>
 
-    <div class="section" id="patient-centered-approach">
-      <h2>Patient-Centered Approach</h2>
-      <p>At Pro Spine, we believe in a holistic, patient-centered approach. Our commitment to listening to our patients and conducting thorough assessments allows us to develop personalized treatment plans that address the root causes of pain. By focusing on long-term relief through tailored therapies and lifestyle recommendations, we help patients build a foundation for sustainable health and mobility.</p>
-    </div>
-
-    <div class="section" id="research-and-innovation">
-      <h2>Research and Innovation</h2>
-      <p>We are committed to innovation and excellence in physiotherapy. Pro Spine utilizes evidence-based therapies and the latest technology to deliver effective treatments for our patients. Our dedication to staying on the cutting edge of physical therapy practices ensures that every patient benefits from the most current, research-backed care.</p>
-    </div>
-
-    <div class="section" id="community-engagement">
-      <h2>Community Engagement</h2>
-      <p>Beyond our clinic, Pro Spine actively promotes health and wellness within our community. Through educational seminars, workshops, and health awareness programs, such as our recent office syndrome awareness campaign, we empower individuals with the knowledge they need to make informed choices about their health. Pro Spine is dedicated to improving public health by providing accessible and valuable health information.</p>
-    </div>
-
-    <div class="section" id="contact-invitation">
-      <h2>Contact and Invitation</h2>
-      <p>Ready to take the first step toward a pain-free life? Contact Pro Spine today to schedule a consultation with our expert team. Together, we can create a personalized plan that supports your journey to better health and mobility.</p>
-      <div class="cta">
-        <button onclick="location.href='contact.html'">Book an Appointment</button>
+        <hr class="hr2 hr">
       </div>
     </div>
-  </div>
+    <main>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="text">
+              <h2>Testimonial 1</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste corrupti veniam corporis eligendi,
+                voluptatem quia omnis vero deserunt.</p>
+            </div>
+            <div class="vidsreel">
+              <video src="video/vids3.mp4" controls>Your browser does not support the video tag.</video>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+              <h2>Testimonial 2</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste corrupti veniam corporis eligendi,
+                voluptatem quia omnis vero deserunt.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="vids">
+              <video src="video/vids2.mp4" controls>Your browser does not support the video tag.</video>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+              <h2>Testimonial 3</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste corrupti veniam corporis eligendi,
+                voluptatem quia omnis vero deserunt.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="vidsreel">
+              <video src="video/vids3.mp4" controls>Your browser does not support the video tag.</video>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="text">
+              <h2>Testimonial 4</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste corrupti veniam corporis eligendi,
+                voluptatem quia omnis vero deserunt.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="vids">
+              <video src="video/vids1.mp4" controls>Your browser does not support the video tag.</video>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: true
+        },
+        keyboard: {
+          enabled: true
+        },
+        mousewheel: {
+          thresholdDelta: 70
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        breakpoints: {
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+          }
+        }
+      });
+    </script>
+  </body>
+
 </html>

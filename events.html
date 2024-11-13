@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="icon" href="image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+
+        header {
+            height: 100px;
+        }
+
+        .logo-container img {
+            position: absolute;
+            top: 10px;
+        }
+
+        .box1 {
+            width: 100%;
+        }
+
+        .design-section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #1f1f1f;
+            min-height: 100vh;
+            padding: 100px 0;
+            font-family: Jost;
+        }
+
+        .design {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+        }
+
+        .timeline {
+            width: 90%;
+            height: auto;
+            /* max-width: 800px; */
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid #fff; */
+        }
+
+        .timeline-content {
+            width: 800px;
+            height: 400px;
+            padding: 10px;
+            background: #1f1f1f;
+            -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+            color: white;
+            /* padding: 1.75rem; */
+            transition: 0.4s ease;
+            overflow-wrap: break-word !important;
+            /* margin: 1rem; */
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 1px solid #fff;
+            display: flex;
+        }
+
+        .text {
+            width: 100%;
+            margin-right: 10px;
+            border: 1px solid;
+        }
+
+        .images img {
+            width: 100%;
+            height: auto;
+        }
+
+        .timeline-component {
+            margin: 0px 20px 20px 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .timeline {
+                display: grid;
+                grid-template-columns: 1fr 3px 1fr;
+
+            }
+
+            .timeline-middle {
+                position: relative;
+                background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+                width: 3px;
+                height: 100%;
+            }
+
+            .main-middle {
+                opacity: 0;
+            }
+
+            .timeline-circle {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .logo-container img {
+                top: 0;
+            }
+
+            header {
+                height: auto;
+            }
+
+            .popup {
+                max-width: 150px;
+            }
+
+            .timeline-content {
+                display: flex;
+                flex-direction: column;
+                margin-left: 0px;
+                width: 100%;
+                min-height: 300px;
+                height: auto;
+            }
+
+            .text {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="image/logo.png" alt="Pro Physio Logo" class="logo"></a>
+        </div>
+
+        <nav>
+            <div class="nav-container">
+                <div class="hamburger" id="hamburger">
+                    &#9776;
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="prospineapproach.html">Why Pro Spine</a>
+                    <a href="treatment.html">Conditions We Treat</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="testimonials.html">Testimonials</a>
+                    <a href="events.html" class="link active">Events</a>
+                    <a href="career.html">Career</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-right">
+            <a href="tel:+919939121212" class="contact-number">Call us: +91 9939121212</a>
+            <!-- <button class="appointment-btn">Book Now!</button> -->
+        </div>
+    </header>
+    <div class="box1">
+        <div class="inner-box">
+            <h1>Upcoming Health & Wellness Events</h1>
+            <p>Join us at Pro Spine for our latest events focused on spine health, wellness, and recovery. Discover
+                expert insights, engage in hands-on sessions, and learn strategies for maintaining a healthy spine. We
+                look forward to welcoming you!</p>
+            <br />
+
+            <hr class="hr2 hr">
+        </div>
+    </div>
+    <section class="design-section">
+        <div class="timeline">
+            <div class="timeline-empty"></div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <div class="text">
+                    <h3>HTML</h3>
+                    <p>Some Text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat harum dicta modi quos
+                        itaque excepturi, quia ea delectus obcaecati dolorem? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ex, modi tempora, culpa nulla excepturi sequi sed quos praesentium voluptatum,
+                        corporis corrupti alias ad quam. Amet tempora placeat dolore in tempore.</p>
+                </div>
+                <div class="images">
+                    <img src="image/3.jpg" alt="test">
+                </div>
+            </div>
+
+            <div class="timeline-component timeline-content">
+                <h3>CSS</h3>
+                <p>Some Text.</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty"></div>
+
+            <!-- Additional timeline items -->
+            <div class="timeline-empty"></div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h3>JavaScript</h3>
+                <p>Some Text.</p>
+            </div>
+
+            <div class="timeline-component timeline-content">
+                <h3>React</h3>
+                <p>Some Text.</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty"></div>
+
+            <div class="timeline-empty"></div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h3>Node.js</h3>
+                <p>Some Text.</p>
+            </div>
+
+            <div class="timeline-component timeline-content">
+                <h3>MongoDB</h3>
+                <p>Some Text.</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty"></div>
+        </div>
+    </section>
+
+</body>
+
+</html>

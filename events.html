@@ -45,7 +45,7 @@
         }
 
         .timeline {
-            width: 90%;
+            width: 98%;
             height: auto;
             /* max-width: 800px; */
             margin: 0 auto;
@@ -55,12 +55,12 @@
         }
 
         .timeline-content {
-            width: 800px;
+            width: 850px;
             height: 400px;
-            padding: 10px;
+            padding: 15px;
             background: #1f1f1f;
             -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+            box-shadow: 5px 5px 10px #444444, -5px -5px 10px #242424;
             color: white;
             /* padding: 1.75rem; */
             transition: 0.4s ease;
@@ -68,14 +68,39 @@
             /* margin: 1rem; */
             margin-bottom: 20px;
             border-radius: 6px;
-            border: 1px solid #fff;
+            /* border: 1px solid #fff; */
             display: flex;
+            opacity: 0;
+            /* Initially hidden for animation */
+            transform: translateY(50px);
+            /* Initial position */
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .timeline-content.animate {
+            opacity: 1;
+            /* Fade-in */
+            transform: translateY(0);
+            /* Slide-up */
         }
 
         .text {
             width: 100%;
             margin-right: 10px;
-            border: 1px solid;
+            /* border: 1px solid; */
+            padding: 10px;
+        }
+
+        .text h3 {
+            align-items: center;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .text h4 {
+            position: relative;
+            margin-top: 25px;
+            font-weight: 300;
         }
 
         .images img {
@@ -179,15 +204,16 @@
     </header>
     <div class="box1">
         <div class="inner-box">
-            <h1>Upcoming Health & Wellness Events</h1>
-            <p>Join us at Pro Spine for our latest events focused on spine health, wellness, and recovery. Discover
-                expert insights, engage in hands-on sessions, and learn strategies for maintaining a healthy spine. We
-                look forward to welcoming you!</p>
+            <h1>Our Health & Wellness Events</h1>
+            <p>Discover Pro Spine's journey through educational and interactive events focused on spine health,
+                wellness, and recovery. Explore insights and practical strategies shared in past events, and stay tuned
+                for announcements of upcoming ones. Check back frequently to stay updated!</p>
             <br />
 
             <hr class="hr2 hr">
         </div>
     </div>
+
     <section class="design-section">
         <div class="timeline">
             <div class="timeline-empty"></div>
@@ -196,11 +222,12 @@
             </div>
             <div class="timeline-component timeline-content">
                 <div class="text">
-                    <h3>HTML</h3>
+                    <h3>Event 1</h3>
                     <p>Some Text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat harum dicta modi quos
                         itaque excepturi, quia ea delectus obcaecati dolorem? Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Ex, modi tempora, culpa nulla excepturi sequi sed quos praesentium voluptatum,
                         corporis corrupti alias ad quam. Amet tempora placeat dolore in tempore.</p>
+                    <h4>Date - 15-11-24</h4>
                 </div>
                 <div class="images">
                     <img src="image/3.jpg" alt="test">
@@ -208,8 +235,17 @@
             </div>
 
             <div class="timeline-component timeline-content">
-                <h3>CSS</h3>
-                <p>Some Text.</p>
+                <div class="text">
+                    <h3>Event 2</h3>
+                    <p>Some Text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat harum dicta modi quos
+                        itaque excepturi, quia ea delectus obcaecati dolorem? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ex, modi tempora, culpa nulla excepturi sequi sed quos praesentium voluptatum,
+                        corporis corrupti alias ad quam. Amet tempora placeat dolore in tempore.</p>
+                    <h4>Date - 15-11-24</h4>
+                </div>
+                <div class="images">
+                    <img src="image/3.jpg" alt="test">
+                </div>
             </div>
             <div class="timeline-middle">
                 <div class="timeline-circle"></div>
@@ -222,13 +258,31 @@
                 <div class="timeline-circle"></div>
             </div>
             <div class="timeline-component timeline-content">
-                <h3>JavaScript</h3>
-                <p>Some Text.</p>
+                <div class="text">
+                    <h3>Event 3</h3>
+                    <p>Some Text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat harum dicta modi quos
+                        itaque excepturi, quia ea delectus obcaecati dolorem? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ex, modi tempora, culpa nulla excepturi sequi sed quos praesentium voluptatum,
+                        corporis corrupti alias ad quam. Amet tempora placeat dolore in tempore.</p>
+                    <h4>Date - 15-11-24</h4>
+                </div>
+                <div class="images">
+                    <img src="image/3.jpg" alt="test">
+                </div>
             </div>
 
             <div class="timeline-component timeline-content">
-                <h3>React</h3>
-                <p>Some Text.</p>
+                <div class="text">
+                    <h3>Event 4</h3>
+                    <p>Some Text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat harum dicta modi quos
+                        itaque excepturi, quia ea delectus obcaecati dolorem? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ex, modi tempora, culpa nulla excepturi sequi sed quos praesentium voluptatum,
+                        corporis corrupti alias ad quam. Amet tempora placeat dolore in tempore.</p>
+                    <h4>Date - 15-11-24</h4>
+                </div>
+                <div class="images">
+                    <img src="image/3.jpg" alt="test">
+                </div>
             </div>
             <div class="timeline-middle">
                 <div class="timeline-circle"></div>
@@ -240,13 +294,31 @@
                 <div class="timeline-circle"></div>
             </div>
             <div class="timeline-component timeline-content">
-                <h3>Node.js</h3>
-                <p>Some Text.</p>
+                <div class="text">
+                    <h3>Event 5</h3>
+                    <p>Some Text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat harum dicta modi quos
+                        itaque excepturi, quia ea delectus obcaecati dolorem? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ex, modi tempora, culpa nulla excepturi sequi sed quos praesentium voluptatum,
+                        corporis corrupti alias ad quam. Amet tempora placeat dolore in tempore.</p>
+                    <h4>Date - 15-11-24</h4>
+                </div>
+                <div class="images">
+                    <img src="image/3.jpg" alt="test">
+                </div>
             </div>
 
             <div class="timeline-component timeline-content">
-                <h3>MongoDB</h3>
-                <p>Some Text.</p>
+                <div class="text">
+                    <h3>Event 6</h3>
+                    <p>Some Text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat harum dicta modi quos
+                        itaque excepturi, quia ea delectus obcaecati dolorem? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ex, modi tempora, culpa nulla excepturi sequi sed quos praesentium voluptatum,
+                        corporis corrupti alias ad quam. Amet tempora placeat dolore in tempore.</p>
+                    <h4>Date - 15-11-24</h4>
+                </div>
+                <div class="images">
+                    <img src="image/3.jpg" alt="test">
+                </div>
             </div>
             <div class="timeline-middle">
                 <div class="timeline-circle"></div>
@@ -254,7 +326,86 @@
             <div class="timeline-empty"></div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-quote">
+                <h2>"Let challenges shape you, not stop you."</h2>
+                <img src="image/logo.png" alt="Logo" class="logo">
+            </div>
+            <hr class="hr">
+            <div class="footer-sections">
+                <div class="about-section footer-section">
+                    <h3>About us</h3>
+                    <ul>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Awards & Affiliations</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Conditions We Treat</h3>
+                    <ul>
+                        <li><a href="#">Herniated Disc</a></li>
+                        <li><a href="#">Spondylolisthesis</a></li>
+                        <li><a href="#">Degenerative Disc</a></li>
+                        <li><a href="#">Brachial Neuralgia</a></li>
+                        <li><a href="#">Disc Prolapse</a></li>
+                        <li><a href="#">Retrolisthesis</a></li>
+                        <li><a href="#">Scoliosis</a></li>
+                        <li><a href="#">Facet Joint Syndrome</a></li>
+                        <li><a href="#">Thecal Compression</a></li>
+                        <li><a href="treatment.html">See All >></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="prospineapproach.html">Why Pro Spine</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Carrier</a></li>
+                        <li><a href="#">Manipal Physiotherapy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2025, ProSpine. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Terms & conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><img src="image/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="image/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="image/icons8-instagram-48.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Function to add animation class when elements enter the viewport
+        const timelineContents = document.querySelectorAll('.timeline-content');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        });
 
+        timelineContents.forEach(content => observer.observe(content));
+    </script>
 </body>
 
 </html>

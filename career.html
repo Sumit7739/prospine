@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Pro Spine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .box1 {
+            width: 100%;
+            border-radius: 0px;
+        }
+
+        .box5 {
+            display: block;
+        }
+
+        .box5 h3 {
+            font-size: 2em;
+        }
+
+        /* Initial hidden state */
+        #box5 {
+            opacity: 0;
+            transform: translateY(100px);
+            transition: transform 1.5s ease-out, opacity 1s ease-out;
+        }
+
+        /* Visible state */
+        #box5.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        .containeer {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            background: #fff;
+            border-radius: 10px;
+            margin: 20px 0;
+            padding: 30px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #00509e;
+            margin-bottom: 10px;
+            border-left: 5px solid #00509e;
+            padding-left: 10px;
+        }
+
+        .description {
+            font-size: 1rem;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .form {
+            background: #ffffff3a;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        .form input,
+        .form textarea {
+            margin-bottom: 20px;
+            border-radius: 15px;
+            font-size: 1rem;
+        }
+
+
+
+        @media screen and (max-width: 768px) {
+            .logo-container img {
+                position: absolute;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="image/logo.png" alt="Pro Physio Logo" class="logo"></a>
+        </div>
+
+        <nav>
+            <div class="nav-container">
+                <div class="hamburger" id="hamburger">
+                    &#9776;
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="prospineapproach.html">Why Pro Spine</a>
+                    <a href="treatment.html">Conditions We Treat</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="testimonials.html">Testimonials</a>
+                    <a href="events.html">Events</a>
+                    <a href="career.html" class="link active">Career</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-right">
+            <a href="tel:+919939121212" class="contact-number">Call us: +91 9939121212</a>
+            <!-- <button class="appointment-btn">Book Now!</button> -->
+        </div>
+    </header>
+    <div class="box1">
+        <div class="inner-box">
+            <h1 class="box1-title">Careers at Pro Spine</h1>
+            <p>Shape your future with our diverse opportunities in healthcare and research.</p>
+            <br>
+            <hr class="hr2 hr">
+        </div>
+    </div>
+    <div class="box2">
+        <h2 style="text-align: center; font-size: 2rem; color: #00509e; margin-top: 20px;">
+            Unlock Your Potential with Pro Spine
+        </h2>
+        <p style="text-align: center; margin: 20px; font-size: 1.2rem; color: #444; line-height: 1.6;">
+            At Pro Spine, we believe in empowering individuals to grow and make meaningful contributions in the field of
+            spine health and wellness.
+            Whether you’re looking to start your career, gain hands-on experience, or advance your expertise, we offer a
+            range of opportunities
+            designed to help you achieve your professional goals. Explore our openings and programs to become part of a
+            team dedicated to
+            transforming lives through innovation and care.
+        </p>
+
+    </div>
+
+    <div class="containeer">
+        <section id="jobs">
+            <h2 class="section-title">Jobs</h2>
+            <p class="description">
+                Join our team of dedicated professionals and make a meaningful impact in the field of spine health.
+                Contact our office directly or fill out the form below to request a callback about available positions.
+            </p>
+        </section>
+
+        <section id="observership">
+            <h2 class="section-title">Observership</h2>
+            <p class="description">
+                Gain valuable hands-on experience by observing our experts in action. Perfect for healthcare students
+                or professionals seeking to enhance their knowledge in spine therapies and treatments.
+                Reach out to our office or use the form below to learn more.
+            </p>
+        </section>
+
+        <section id="internship">
+            <h2 class="section-title">Internship</h2>
+            <p class="description">
+                Our internship program offers students and graduates the opportunity to work alongside experienced
+                professionals.
+                Develop your skills and kickstart your career in a supportive environment. Contact us for details or
+                fill out the form below.
+            </p>
+        </section>
+
+        <section id="fellowship">
+            <h2 class="section-title">Fellowship</h2>
+            <p class="description">
+                Dive deeper into advanced clinical and research training with our fellowship programs.
+                Designed for professionals seeking to specialize in spine health and innovative treatments. Call us or
+                submit a request for more information.
+            </p>
+        </section>
+
+        <section id="researchers">
+            <h2 class="section-title">Researchers</h2>
+            <p class="description">
+                Join our research team to collaborate on groundbreaking studies and projects in spine health.
+                Contribute to advancing knowledge and improving patient outcomes. Reach out for details or complete the
+                form below.
+            </p>
+        </section>
+
+        <div id="box5" class="box5">
+            <h3>Contact Us</h3>
+            <div class="form">
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your message here"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-quote">
+                <h2>"Let challenges shape you, not stop you."</h2>
+                <img src="image/logo.png" alt="Logo" class="logo">
+            </div>
+            <hr class="hr">
+            <div class="footer-sections">
+                <div class="about-section footer-section">
+                    <h3>About us</h3>
+                    <ul>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Awards & Affiliations</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Conditions We Treat</h3>
+                    <ul>
+                        <li><a href="#">Herniated Disc</a></li>
+                        <li><a href="#">Spondylolisthesis</a></li>
+                        <li><a href="#">Degenerative Disc</a></li>
+                        <li><a href="#">Brachial Neuralgia</a></li>
+                        <li><a href="#">Disc Prolapse</a></li>
+                        <li><a href="#">Retrolisthesis</a></li>
+                        <li><a href="#">Scoliosis</a></li>
+                        <li><a href="#">Facet Joint Syndrome</a></li>
+                        <li><a href="#">Thecal Compression</a></li>
+                        <li><a href="treatment.html">See All >></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="prospineapproach.html">Why Pro Spine</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Carrier</a></li>
+                        <li><a href="#">Manipal Physiotherapy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2025, ProSpine. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Terms & conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><img src="image/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="image/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="image/icons8-instagram-48.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const box5 = document.getElementById('box5');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        box5.classList.add('animate');
+                    }
+                });
+            }, { threshold: 0.5 }); // Trigger when 50% of the box is visible
+
+            observer.observe(box5);
+        });
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

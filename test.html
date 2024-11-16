@@ -1,131 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Pro Spine</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .design-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-color: #1f1f1f;
-      min-height: 100vh;
-      padding: 100px 0;
-      font-family: Jost;
-    }
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
 
-    .design {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+        header {
+            background: linear-gradient(135deg, #00509e, #003366);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
 
-    .timeline {
-      width: 80%;
-      height: auto;
-      max-width: 800px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-    }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
 
-    .timeline-content {
-      padding: 20px;
-      background: #1f1f1f;
-      -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-      box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-      border-radius: 5px;
-      color: white;
-      padding: 1.75rem;
-      transition: 0.4s ease;
-      overflow-wrap: break-word !important;
-      margin: 1rem;
-      margin-bottom: 20px;
-      border-radius: 6px;
-    }
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
 
-    .timeline-component {
-      margin: 0px 20px 20px 20px;
-    }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-    @media screen and (min-width: 768px) {
-      .timeline {
-        display: grid;
-        grid-template-columns: 1fr 3px 1fr;
-      }
+        section {
+            background: #fff;
+            border-radius: 10px;
+            margin: 20px 0;
+            padding: 30px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1s forwards;
+        }
 
-      .timeline-middle {
-        position: relative;
-        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
-        width: 3px;
-        height: 100%;
-      }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-      .main-middle {
-        opacity: 0;
-      }
+        .section-title {
+            font-size: 2rem;
+            color: #00509e;
+            margin-bottom: 10px;
+            border-left: 5px solid #00509e;
+            padding-left: 10px;
+        }
 
-      .timeline-circle {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-      }
-    }
-  </style>
+        .description {
+            font-size: 1rem;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .form-container {
+            background: #f1f1f1;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        .form-container h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #003366;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-container button {
+            display: inline-block;
+            background: #00509e;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background: #007bff;
+        }
+    </style>
 </head>
-
 <body>
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
-  </style>
-  <!--This is the main container that contains the whole timeline.-->
-  <section class="design-section">
-    <div class="timeline">
-      <div class="timeline-empty">
-      </div>
-      <div class="timeline-middle">
-        <div class="timeline-circle"></div>
-      </div>
-      <div class="timeline-component timeline-content">
-        <h3>HTML</h3>
-        <p>Some Text</p>
-      </div>
-      <div class="timeline-component timeline-content">
-        <h3>CSS</h3>
-        <p>Some Text.</p>
-      </div>
-      <div class="timeline-middle">
-        <div class="timeline-circle"></div>
-      </div>
-      <div class="timeline-empty">
-      </div>
+<header>
+    <h1>Careers at Pro Spine</h1>
+    <p>Shape your future with our diverse opportunities in healthcare and research.</p>
+</header>
 
-      <div class="timeline-empty">
-      </div>
+<div class="container">
+    <section id="jobs">
+        <h2 class="section-title">Jobs</h2>
+        <p class="description">
+            Join our team of dedicated professionals and make a meaningful impact in the field of spine health. 
+            Contact our office directly or fill out the form below to request a callback about available positions.
+        </p>
+    </section>
 
-      <div class="timeline-middle">
-        <div class="timeline-circle"></div>
-      </div>
-      <div class=" timeline-component timeline-content">
-        <h3>Javascript</h3>
-        <p>Some Text.</p>
-      </div>
+    <section id="observership">
+        <h2 class="section-title">Observership</h2>
+        <p class="description">
+            Gain valuable hands-on experience by observing our experts in action. Perfect for healthcare students 
+            or professionals seeking to enhance their knowledge in spine therapies and treatments.
+            Reach out to our office or use the form below to learn more.
+        </p>
+    </section>
 
+    <section id="internship">
+        <h2 class="section-title">Internship</h2>
+        <p class="description">
+            Our internship program offers students and graduates the opportunity to work alongside experienced professionals. 
+            Develop your skills and kickstart your career in a supportive environment. Contact us for details or fill out the form below.
+        </p>
+    </section>
+
+    <section id="fellowship">
+        <h2 class="section-title">Fellowship</h2>
+        <p class="description">
+            Dive deeper into advanced clinical and research training with our fellowship programs. 
+            Designed for professionals seeking to specialize in spine health and innovative treatments. Call us or submit a request for more information.
+        </p>
+    </section>
+
+    <section id="researchers">
+        <h2 class="section-title">Researchers</h2>
+        <p class="description">
+            Join our research team to collaborate on groundbreaking studies and projects in spine health. 
+            Contribute to advancing knowledge and improving patient outcomes. Reach out for details or complete the form below.
+        </p>
+    </section>
+
+    <div class="form-container">
+        <h3>Contact Us</h3>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </div>
-    </div>
-  </section>
+</div>
+
 </body>
-
 </html>
